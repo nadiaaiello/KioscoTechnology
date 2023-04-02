@@ -1,0 +1,196 @@
+/*GENERAL*/
+body{
+    background-color: #fffcfe;
+    margin:0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header div img {
+    width: 60px;
+}
+
+header li{
+    margin:8px;
+}
+
+
+header, footer{
+    background-color: #2b2b70;
+    color:white;
+    margin:0px;
+    padding:10px 30px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
+header li, footer li{
+    list-style-type: none;
+    display: inline;
+}
+
+/*formulario para todas las paginas*/
+.formulario{
+    background-color: #2E2D4D;
+    color:white;
+    margin:20px 100px;
+    padding:30px 10px 30px 30px;
+}
+
+.formulario div{
+    margin-right:100px;
+}
+
+
+
+/*INDEX*/
+
+.banner{
+    background-color: #a09abc;
+    color: white;
+
+    padding: 20px 80px;
+}
+
+.banner img{
+    width:300px;
+}
+
+.linkproductos div{
+    border-width: medium;
+    border-color: #161662;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 50px;
+    padding:30px 10px;
+}
+
+.linkproductos div h1{
+    padding: 10px 15px;
+    margin: 20px;
+    background-color: #2e2d4d;
+    color:white;
+    border-radius: 200px;
+
+} 
+
+.linkproductos div p, .linkproductos div button{
+    margin: 20px;
+}
+
+.iconos{
+    background-color: #b8bccc;
+    padding:30px;
+}
+
+.iconos div{
+    margin:10px;
+}
+
+.iconos i{
+    background-color: #2e2d4d;
+    color:white;
+    border-radius: 100px;
+    padding:10px 15px;
+    font-size: 50px;
+    align-self: center;
+}
+
+/*PRODUCTOS*/
+.pag_productos h1{
+    background-color: #A09ABC;
+    margin: 0px;
+}
+
+
+.categorias{
+    background-color: #2E2D4D;
+    color: white;
+    margin-bottom:200px;
+    padding:10px;
+}
+
+.productos{
+    margin:20px;
+}
+
+.productos div{
+    border-style: solid;
+    border-color: #2E2D4D;
+    border-radius: 10px;
+    align-items: center;
+    padding:10px;
+    margin:20px;
+}
+
+.productos img{
+    width:200px;
+}
+
+/*SERVICIOS*/
+
+.servicios{
+    background-color: #A09ABC;
+    padding: 30px;
+    padding-bottom: 40px;
+    margin-bottom:30px;
+}
+
+.servicios img{
+    width:200px;
+}
+
+.servicios div{
+    align-items: center;
+}
+
+.servicios li{
+    list-style-type: none;
+}
+
+/*CONTACTO*/
+
+.contacto {
+    background-color: #A09ABC;
+    padding: 30px;
+}
+
+.contacto h1{
+    font-size: medium;
+    align-self: center;
+    margin: 20px;
+}
+
+.contacto img{
+    width:100px;
+}
+
+.contacto a{
+    align-self: center;
+    margin:5px;
+    font-size: 20px;
+}
+
+/*INFORMACION*/
+
+.informacion{
+    background-color: #A09ABC;
+    margin:50px;
+    padding:20px;
+
+}
+
+.informacion img{
+    width:100px;
+    margin:20px;
+}
+
+.informacion div{
+    align-items: center;
+}
+
+
+
