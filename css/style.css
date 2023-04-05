@@ -19,6 +19,10 @@ header, footer{
     color:white;
     margin:0px;
     padding:10px 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header a, footer a{
@@ -32,31 +36,68 @@ header li, footer li{
     display: inline;
 }
 
+.footerContacto ul{
+     display: flex;
+     flex-direction: column;
+     padding-inline-start: 0px;
+}
+
 /*formulario para todas las paginas*/
 .formulario{
     background-color: #2E2D4D;
     color:white;
     margin:20px 100px;
-    padding:30px 10px 30px 30px;
+    padding:30px;
+    display: flex;
+    grid-area: formulario;
 }
 
-.formulario div{
-    margin-right:100px;
+.formulario input{
+    display:flex;
+    flex-direction: column;
+    margin:0px 10px 10px 0px ;
+    padding-right: 90px;
 }
-
 
 
 /*INDEX*/
 
+.gridIndex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "linkproductos"
+    "formulario"
+    "footer";
+}
+
 .banner{
     background-color: #a09abc;
     color: white;
-
     padding: 20px 80px;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .banner img{
     width:300px;
+}
+
+.linkproductos{
+    display: grid;
+    grid-column: 30% 30%;
+    grid-template-areas: "linkcelu linkservice";
+    grid-area: linkproductos;
+}
+
+.linkcelu{
+    grid-area: linkcelu;
+}
+.linkservice{
+    grid-area: linkservice;
 }
 
 .linkproductos div{
@@ -66,15 +107,19 @@ header li, footer li{
     border-radius: 20px;
     margin: 50px;
     padding:30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .linkproductos div h1{
-    padding: 10px 15px;
-    margin: 20px;
+    width: 12%;
+    height: 100%;
     background-color: #2e2d4d;
     color:white;
     border-radius: 200px;
-
+    display: flex;
+    justify-content: center;
 } 
 
 .linkproductos div p, .linkproductos div button{
@@ -84,6 +129,8 @@ header li, footer li{
 .iconos{
     background-color: #b8bccc;
     padding:30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .iconos div{
@@ -100,21 +147,46 @@ header li, footer li{
 }
 
 /*PRODUCTOS*/
+.gridProductos{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "categorias productos"
+    /*espacio vacio y despues productos*/
+    "footer footer";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto ;
+}
+header{ grid-area: header;}
+footer{grid-area: footer;}
+
 .pag_productos h1{
     background-color: #A09ABC;
     margin: 0px;
+    grid-area: titulo;
 }
 
+header{grid-area: header;}
+footer{grid-area: footer;}
 
+.flex{
+    display: flex;
+}
 .categorias{
     background-color: #2E2D4D;
     color: white;
     margin-bottom:200px;
-    padding:10px;
+    padding:20px;
+    grid-area: categorias;
 }
+
 
 .productos{
     margin:20px;
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .productos div{
@@ -130,13 +202,35 @@ header li, footer li{
     width:200px;
 }
 
+
 /*SERVICIOS*/
 
-.servicios{
+.gridServicios{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "servicios"
+    "formulario"
+    "footer";
+}
+
+.servicios div{
     background-color: #A09ABC;
-    padding: 30px;
     padding-bottom: 40px;
     margin-bottom:30px;
+    grid-area: servicios;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+.servicios h1{
+    background-color: #A09ABC;
+    display:flex;
+    justify-content: center;
+    margin: 0px;
+    padding:30px;
 }
 
 .servicios img{
@@ -153,9 +247,23 @@ header li, footer li{
 
 /*CONTACTO*/
 
+.gridContacto{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "contacto"
+    "formulario"
+    "footer";
+}
+
 .contacto {
     background-color: #A09ABC;
     padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: contacto;
 }
 
 .contacto h1{
@@ -169,9 +277,8 @@ header li, footer li{
 }
 
 .contacto a{
-    align-self: center;
-    margin:5px;
     font-size: 20px;
+    padding:5px;
 }
 
 /*INFORMACION*/
@@ -180,6 +287,7 @@ header li, footer li{
     background-color: #A09ABC;
     margin:50px;
     padding:20px;
+    grid-area: informacion;
 
 }
 
@@ -192,5 +300,12 @@ header li, footer li{
     align-items: center;
 }
 
-
+.gridInfo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "informacion"
+    "footer";
+}
 
