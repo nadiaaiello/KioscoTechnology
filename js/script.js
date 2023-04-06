@@ -1,5 +1,5 @@
+var x = document.getElementById("Links");
 function myFunction() {
-    var x = document.getElementById("Links");
     if (x.style.display === "flex") {
       x.style.display = "none";
     } else {
